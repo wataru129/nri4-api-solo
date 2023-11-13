@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node ./src/index.js",
     "dev": "nodemon ./src/index.js",
-    "test": "mocha test && yarn lint",
+    "test": "mocha test",
     "lint": "eslint src --fix && prettier --write src"
   },
   "keywords": [],
@@ -26,6 +26,7 @@
     "eslint-plugin-prettier": "^5.0.1",
     "mocha": "^10.2.0",
     "nodemon": "^3.0.1",
-    "prettier": "^3.0.3"
+    "prettier": "^3.0.3",
+    "yarn": "^1.22.19"
   }
 }

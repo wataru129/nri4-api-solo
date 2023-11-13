@@ -5,22 +5,22 @@
  */
 module.exports = {
 
-  development: {
-    client: 'postgresql',
-    connection: {
-      host     : '127.0.0.1',
-      database: 'nri4-api-solo',
-      user:     'postgres',
-      password: 'postgres'
-    },
-    migrations: {
-      directory:'./db/migrations',
-      tableName: 'knex_migrations'
-    },
-    seeds: {
-      directory: "./db/seeds",
-    }
+  // development: {
+  client: 'postgresql',
+  connection: {
+    host     : '127.0.0.1',
+    database: 'nri4-api-solo',
+    user:     'postgres',
+    password: 'postgres'
   },
+  migrations: {
+    directory:'./db/migrations',
+    tableName: 'knex_migrations'
+  },
+  seeds: {
+    directory: "./db/seeds",
+  }
+  // },
 
   // staging: {
   //   client: 'postgresql',
