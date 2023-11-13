@@ -1,7 +1,8 @@
-const express = require("express");
-const setupServer = () =>{
-    const app = express();
-    app.get('/', (res, req) => {
-        res.send('Hello World');
-    });
-};
+const { setupServer } = require("./server");
+
+const server = setupServer();
+
+const PORT = process.env.PORT || 3000;
+server.listen(PORT,() =>{
+    console.log("Server listning on Port", PORT);
+});

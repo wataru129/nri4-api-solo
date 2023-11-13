@@ -1,8 +1,10 @@
-const { setupServer } = require("./server");
-
-const server = setupServer();
-
-const PORT = process.env.PORT || 3000;
-server.listen(PORT,() =>{
-    console.log("Server listning on Port", PORT);
-});
+const express = require("express");
+const setupServer = () =>{
+    const app = express();
+    app.use(express.json());
+    app.get('/', (req, res) => {
+        res.status(200).send('Hello World');
+    });
+    return app;
+};
+module.exports = { setupServer };
