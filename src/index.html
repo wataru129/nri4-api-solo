@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Snack API Interface</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Snack API Interface</h1>
+
+    <!-- スナックの一覧表示 -->
+    <section>
+        <button id="fetchSnacks">スナック一覧を取得</button>
+        <div id="snackList"></div>
+    </section>
+
+    <!-- スナックの追加 -->
+    <section>
+        <h2>新しいスナックを追加</h2>
+        <form id="addSnackForm">
+            <input type="text" id="name" placeholder="名前">
+            <input type="text" id="kana" placeholder="カナ">
+            <input type="text" id="maker" placeholder="メーカー">
+            <input type="text" id="price" placeholder="価格">
+            <input type="text" id="type" placeholder="種別">
+            <input type="text" id="regist" placeholder="登録日">
+            <input type="text" id="url" placeholder="URL">
+            <input type="text" id="tags" placeholder="タグ">
+            <input type="text" id="image" placeholder="画像">
+            <input type="text" id="comment" placeholder="コメント">
+            <button type="submit">追加</button>
+        </form>
+    </section>
+
+    <!-- スナックの更新 -->
+    <section>
+        <h2>スナックを更新</h2>
+        <form id="updateSnackForm">
+            <input type="number" id="updateId" placeholder="ID">
+            <input type="text" id="updateName" placeholder="新しい名前">
+            <input type="text" id="updateKana" placeholder="新しいカナ">
+            <input type="text" id="updateMaker" placeholder="新しいメーカー">
+            <input type="text" id="updatePrice" placeholder="新しい価格">
+            <input type="text" id="updateType" placeholder="新しい種別">
+            <input type="text" id="updateRegist" placeholder="新しい登録日">
+            <input type="text" id="updateUrl" placeholder="新しいURL">
+            <input type="text" id="updateTags" placeholder="新しいタグ">
+            <input type="text" id="updateImage" placeholder="新しい画像">
+            <input type="text" id="updateComment" placeholder="新しいコメント">
+            <button type="submit">更新</button>
+        </form>
+    </section>
+
+    <!-- スナックの削除 -->
+    <section>
+        <h2>スナックを削除</h2>
+        <form id="deleteSnackForm">
+            <input type="number" id="deleteId" placeholder="ID">
+            <button type="submit">削除</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

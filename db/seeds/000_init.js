@@ -802,7 +802,6 @@ exports.seed = async function (knex) {
 			"type": "snack",
 			"regist": "1996年10月1日",
 			"url": "https:\/\/sysbird.jp\/toriko\/1996\/10\/01\/%e3%82%ab%e3%83%bc%e3%83%ab%e5%8c%97%e6%b5%b7%e9%81%93%e3%83%81%e3%83%bc%e3%82%ba%e5%91%b3\/",
-			"area": "北海道",
 			"tags": {
 				"tag": [
 					"カール",
@@ -916,7 +915,6 @@ exports.seed = async function (knex) {
 			"type": "snack",
 			"regist": "1996年10月1日",
 			"url": "https:\/\/sysbird.jp\/toriko\/1996\/10\/01\/%E5%A0%85%E3%81%82%E3%81%92%E3%83%9D%E3%83%86%E3%83%88\/",
-			"area": "北海道",
 			"tags": {
 				"tag": [
 					"ポテトチップ",
@@ -935,7 +933,6 @@ exports.seed = async function (knex) {
 			"type": "snack",
 			"regist": "1996年10月1日",
 			"url": "https:\/\/sysbird.jp\/toriko\/1996\/10\/01\/%E3%83%9A%E3%83%83%E3%82%AB%E3%83%BC\/",
-			"area": "北海道",
 			"image": "https:\/\/sysbird.jp\/toriko\/wp-content\/blogs.dir\/2\/files\/5.gif",
 			"comment": "<p>千歳歳空港で入手。北海道とはなんのゆかりもないようなスナック菓子だが、限定品なのではないか？<\/p>\n"
 		},
@@ -948,7 +945,6 @@ exports.seed = async function (knex) {
 			"type": "candy",
 			"regist": "1996年10月1日",
 			"url": "https:\/\/sysbird.jp\/toriko\/1996\/10\/01\/%E3%83%8F%E3%82%A4%E3%83%81%E3%83%A5%E3%82%A6%E5%A4%95%E5%BC%B5%E3%83%A1%E3%83%AD%E3%83%B3%E5%91%B3\/",
-			"area": "北海道",
 			"tags": {
 				"tag": [
 					"ハイチュウ",
@@ -968,7 +964,6 @@ exports.seed = async function (knex) {
 			"type": "snack",
 			"regist": "1996年10月1日",
 			"url": "https:\/\/sysbird.jp\/toriko\/1996\/10\/01\/%E3%82%B8%E3%83%B3%E3%82%AE%E3%82%B9%E3%82%AB%E3%83%B3%E3%83%9D%E3%83%86%E3%83%88%E3%83%81%E3%83%83%E3%83%97%E3%82%B9\/",
-			"area": "北海道",
 			"tags": {
 				"tag": "北海道"
 			},
@@ -984,7 +979,6 @@ exports.seed = async function (knex) {
 			"type": "snack",
 			"regist": "1996年10月1日",
 			"url": "https:\/\/sysbird.jp\/toriko\/1996\/10\/01\/%E3%82%AB%E3%83%AA%E3%83%9D%E3%83%AA\/",
-			"area": "北海道",
 			"image": "https:\/\/sysbird.jp\/toriko\/wp-content\/blogs.dir\/2\/files\/2.gif",
 			"comment": "<p>限定品かどうかは不明。たんに、東京では見かけないだけかも。<\/p>\n"
 		},
@@ -997,7 +991,6 @@ exports.seed = async function (knex) {
 			"type": "chocolate",
 			"regist": "1996年10月1日",
 			"url": "https:\/\/sysbird.jp\/toriko\/1996\/10\/01\/%E3%82%A8%E3%83%B3%E3%82%BC%E3%83%AB%E3%83%91%E3%82%A4%E5%A4%95%E5%BC%B5%E3%83%A1%E3%83%AD%E3%83%B3\/",
-			"area": "北海道",
 			"tags": {
 				"tag": [
 					"エンゼルパイ",

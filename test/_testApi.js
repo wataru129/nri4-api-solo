@@ -25,14 +25,14 @@ describe("snack api", () => {
     });
     describe("GET", () => {
         it("Get ALL ITEMS", async () => {
-            const res = await request.get("/snacks");
+            const res = await request.get("/api/v1/snacks");
             res.should.have.status(200);
-            JSON.parse(res.text).length.should.equal(66);
+            JSON.parse(res.text).length.should.equal(5);
         });
         it("Get ITEMS filter comment", async () => {
             const queryParam = "おいしい";
             const encodedQueryParam = encodeURIComponent(queryParam);
-            const res = await request.get("/snacks?search=" + encodedQueryParam );
+            const res = await request.get("/api/v1/snacks?search=" + encodedQueryParam );
             res.should.have.status(200);
             JSON.parse(res.text).length.should.equal(4);
         });
@@ -40,7 +40,7 @@ describe("snack api", () => {
     describe("POST", () => {
         it("POST ITEM", async () => {
             const res = await request
-            .post("/snacks")
+            .post("/api/v1/snacks")
             .send(testData["item"]);
             postId = res.text;
             res.should.have.status(200);
@@ -50,7 +50,7 @@ describe("snack api", () => {
     describe("PATCH/PUT", () => {
         it("PUT ITEM", async () => {
             const res = await request
-            .put("/snacks/" + postId)
+            .put("/api/v1/snacks/" + postId)
             .send(testData["update_item"]);
             res.should.have.status(200);
         });
@@ -58,8 +58,8 @@ describe("snack api", () => {
     describe("DELETE", () => {
         it("DELETE ITEM", async () => {
             let request = chai.request(server);
-            // const res = await request.delete("/snacks/82");
-            const res = await request.delete("/snacks/" + postId);
+            // const res = await request.delete("/api/v1/snacks/82");
+            const res = await request.delete("/api/v1/snacks/" + postId);
             res.should.have.status(200);
         });
     });
