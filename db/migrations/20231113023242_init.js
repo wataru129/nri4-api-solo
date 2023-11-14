@@ -19,7 +19,6 @@ exports.up = function(knex) {
               table.string('type', 100);
               table.string('regist', 100);
               table.string('url', 1000);
-              table.string('area', 100);
               table.string('tags', 1000);
               table.string('image', 1000);
               table.string('comment', 1000);
