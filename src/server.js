@@ -14,7 +14,7 @@ const setupServer = () => {
     client.connect();
     const app = express();
     app.use(express.json());
-    app.use(express.static('src'));
+    app.use(express.static('static'));
     app.get("/-/healthcheck", (req, res) => {
         res.status(200).send("Hello World");
     });
@@ -27,7 +27,9 @@ const setupServer = () => {
         if (isNaN(limit)) {
             limit = 5;
         }
-        if (Object.keys(req.query).length === 0){
+        console.log(req.query);
+        console.log(req.query.search);
+        if (!req.query.search){
             const query = {
                 text: "SELECT * FROM snack ORDER BY random() LIMIT $1",
                 values: [limit]
@@ -60,7 +62,7 @@ const setupServer = () => {
         };
     });
     app.post("/api/v1/snacks", (req, res) => {
-        console.log(req.body);
+        // console.log(req.body);
         const query = {
             text: 'INSERT INTO snack(name, kana, maker, price, type, regist, url, tags, image, comment)  VALUES($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING *',
             values: [

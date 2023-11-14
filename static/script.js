@@ -4,7 +4,21 @@ document.addEventListener('DOMContentLoaded', function() {
         // fetch('/api/v1/snacks')
         //     .then(response => response.json())
         //     .then(data => console.log(data));
-        fetch('/api/v1/snacks')
+        const limit = document.getElementById('limit').value || ''; // リミットが空の場合のデフォルト値
+        const keyword = document.getElementById('keyword').value || ''; // キーワードが空の場合のデフォルト値
+        let url = `/api/v1/snacks`;
+        if (limit) {
+            url += `?limit=${limit}`;
+            if (keyword) {
+                url += `&search=${encodeURIComponent(keyword)}`;
+            }
+        } else{
+            if (keyword) {
+                url += `?search=${encodeURIComponent(keyword)}`;
+            }
+        }   
+
+        fetch(url)
         .then(response => response.json())
         .then(snacks => {
             const snackList = document.getElementById('snackList');

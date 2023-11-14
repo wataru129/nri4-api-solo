@@ -13,10 +13,10 @@ http//localhost:3000
 
 ## API仕様
 
-||メソッド|URI|
-|---|---|---|
-|お菓子情報の取得|GET|/api/v1/snacks|
-|コメントに含まれるキーワードで検索|GET|/api/v1/snacks?keyword|
-|お菓子情報の追加|POST|/api/v1/snacks|
-|お菓子情報の編集|PUT|/api/v1/snacks/:id|
-|お菓子情報の削除|DELETE|/api/v1/snacks/:id|
+||メソッド|URI|備考|
+|---|---|---|---|
+|お菓子情報の取得|GET|/api/v1/snacks|クエリパラメータでlimitを指定することで表示上限指定可|
+|コメントに含まれるキーワードで検索|GET|/api/v1/snacks?keyword|クエリパラメータでlimitを指定することで表示上限指定可|
+|お菓子情報の追加|POST|/api/v1/snacks|全項目入力必須|
+|お菓子情報の編集|PUT|/api/v1/snacks/:id|ID必須。一部情報でも更新可|
+|お菓子情報の削除|DELETE|/api/v1/snacks/:id||
